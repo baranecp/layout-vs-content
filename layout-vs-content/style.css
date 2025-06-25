@@ -32,6 +32,11 @@ p {
 }
 
 /* Utility classes */
+.bg-dark {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -54,12 +59,11 @@ p {
 @media (min-width: 40em) {
   .split {
     flex-direction: row;
-    justify-content: space-between;
   }
 
-  /* .split > * {
+  .split > * {
     flex-basis: 100%;
-  } */
+  }
 
   .split > * + * {
     margin: 0 0 0 var(--spacer);
@@ -80,6 +84,7 @@ h1,
 h2,
 h3 {
   font-weight: var(--fw-700);
+  line-height: 1.1;
 }
 
 h1 {
@@ -92,6 +97,12 @@ h3 {
   font-size: var(--fs-500);
 }
 
+/* general layout*/
+
+section {
+  padding: 10rem 0;
+}
+
 /* components */
 
 .btn {
@@ -102,4 +113,9 @@ h3 {
   background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
   padding: 0.5em 1.25em;
+}
+
+.card {
+  padding: var(--spacer);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
