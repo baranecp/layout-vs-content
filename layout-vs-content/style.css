@@ -119,3 +119,8 @@ section {
   padding: var(--spacer);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
+
+.section-one {
+  background-image: url('/layout-vs-content/hero-bg.jpg');
+  background-size: cover;
+}
